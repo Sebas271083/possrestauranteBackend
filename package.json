@@ -1,0 +1,46 @@
+{
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.883.0",
+    "bcryptjs": "^3.0.2",
+    "celebrate": "^15.0.3",
+    "compression": "^1.8.1",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.2",
+    "express": "^5.1.0",
+    "express-rate-limit": "^8.1.0",
+    "facturajs": "^0.3.2",
+    "file-type": "^21.0.0",
+    "helmet": "^8.1.0",
+    "joi": "^18.0.1",
+    "jsonwebtoken": "^9.0.2",
+    "mercadopago": "^2.8.0",
+    "morgan": "^1.10.1",
+    "multer": "^2.0.2",
+    "mysql2": "^3.14.4",
+    "pino-http": "^10.5.0",
+    "qrcode": "^1.5.4",
+    "sequelize": "^6.37.7",
+    "sharp": "^0.34.3",
+    "speakeasy": "^2.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  },
+  "name": "pos-api",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {  
+    "dev": "nodemon src/server.js",
+    "start": "node src/server.js",
+    "seed:admin": "node src/seed/initAdmin.js",
+    "seed:demo": "node src/seed/seed_demo.js",
+    "seed:pruebas": "node src/seed/seed_codigoPrueba.js"
+
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
